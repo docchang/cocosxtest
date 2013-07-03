@@ -280,6 +280,9 @@
 		C8344A6A1783FAAB00765B1D /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8344A691783FAAB00765B1D /* libwebsockets.a */; };
 		C8344A701783FAAB00765B1D /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8344A6F1783FAAB00765B1D /* AppDelegate.cpp */; };
 		C8344A731783FAAB00765B1D /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8344A721783FAAB00765B1D /* HelloWorldScene.cpp */; };
+		C8344AA4178403E900765B1D /* fileLookup.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8344A95178403E900765B1D /* fileLookup.plist */; };
+		C8344AA5178403E900765B1D /* HelloWorld.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = C8344A96178403E900765B1D /* HelloWorld.ccbi */; };
+		C8344AA6178403E900765B1D /* Teapot.png in Resources */ = {isa = PBXBuildFile; fileRef = C8344A97178403E900765B1D /* Teapot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -873,6 +876,10 @@
 		C8344A6F1783FAAB00765B1D /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		C8344A711783FAAB00765B1D /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		C8344A721783FAAB00765B1D /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		C8344A791783FB9000765B1D /* common_function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common_function.h; sourceTree = "<group>"; };
+		C8344A95178403E900765B1D /* fileLookup.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fileLookup.plist; sourceTree = "<group>"; };
+		C8344A96178403E900765B1D /* HelloWorld.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelloWorld.ccbi; sourceTree = "<group>"; };
+		C8344A97178403E900765B1D /* Teapot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Teapot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -900,6 +907,7 @@
 		C83446C01783FAA200765B1D = {
 			isa = PBXGroup;
 			children = (
+				C8344A83178403E900765B1D /* res */,
 				C83446DC1783FAA300765B1D /* cocosxtest12 */,
 				C83446CB1783FAA300765B1D /* Frameworks */,
 				C83446CA1783FAA300765B1D /* Products */,
@@ -2093,12 +2101,23 @@
 		C8344A6D1783FAAB00765B1D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C8344A791783FB9000765B1D /* common_function.h */,
 				C8344A6E1783FAAB00765B1D /* AppDelegate.h */,
 				C8344A6F1783FAAB00765B1D /* AppDelegate.cpp */,
 				C8344A711783FAAB00765B1D /* HelloWorldScene.h */,
 				C8344A721783FAAB00765B1D /* HelloWorldScene.cpp */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		C8344A83178403E900765B1D /* res */ = {
+			isa = PBXGroup;
+			children = (
+				C8344A95178403E900765B1D /* fileLookup.plist */,
+				C8344A96178403E900765B1D /* HelloWorld.ccbi */,
+				C8344A97178403E900765B1D /* Teapot.png */,
+			);
+			path = res;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2164,6 +2183,9 @@
 				C83446F31783FAA300765B1D /* iTunesArtwork in Resources */,
 				C83447921783FAA400765B1D /* ChangeLog in Resources */,
 				C83449061783FAA800765B1D /* project.pbxproj in Resources */,
+				C8344AA4178403E900765B1D /* fileLookup.plist in Resources */,
+				C8344AA5178403E900765B1D /* HelloWorld.ccbi in Resources */,
+				C8344AA6178403E900765B1D /* Teapot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2501,6 +2523,7 @@
 				GCC_PREFIX_HEADER = cocosxtest12/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = cocosxtest12/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/cocosxtest12/libs/cocos2dx/platform/third_party/ios/libraries\"",
@@ -2527,6 +2550,7 @@
 				GCC_PREFIX_HEADER = cocosxtest12/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = cocosxtest12/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/cocosxtest12/libs/cocos2dx/platform/third_party/ios/libraries\"",

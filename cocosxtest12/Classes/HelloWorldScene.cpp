@@ -4,20 +4,20 @@
 using namespace cocos2d;
 using namespace CocosDenshion;
 
-CCScene* HelloWorld::scene()
-{
-    // 'scene' is an autorelease object
-    CCScene *scene = CCScene::create();
-    
-    // 'layer' is an autorelease object
-    HelloWorld *layer = HelloWorld::create();
-
-    // add layer as a child to scene
-    scene->addChild(layer);
-
-    // return the scene
-    return scene;
-}
+//CCScene* HelloWorld::scene()
+//{
+//    // 'scene' is an autorelease object
+//    CCScene *scene = CCScene::create();
+//    
+//    // 'layer' is an autorelease object
+//    HelloWorld *layer = HelloWorld::create();
+//
+//    // add layer as a child to scene
+//    scene->addChild(layer);
+//
+//    // return the scene
+//    return scene;
+//}
 
 // on "init" you need to initialize your instance
 bool HelloWorld::init()
@@ -82,3 +82,24 @@ void HelloWorld::menuCloseCallback(CCObject* pSender)
     exit(0);
 #endif
 }
+
+cocos2d::SEL_MenuHandler HelloWorld::onResolveCCBCCMenuItemSelector(cocos2d::CCObject * pTarget, const char * pSelectorName)
+{
+    //    CCB_SELECTORRESOLVER_CCMENUITEM_GLUE(this, "pressedPlay:", MainMenuScene::pressedPlay);
+    return NULL;
+}
+
+cocos2d::extension::SEL_CCControlHandler HelloWorld::onResolveCCBCCControlSelector(cocos2d::CCObject * pTarget, const char * pSelectorName)
+{
+    return NULL;
+}
+
+bool HelloWorld::onAssignCCBMemberVariable(cocos2d::CCObject * pTarget, const char * pMemberVariableName, cocos2d::CCNode * pNode)
+{
+    return false;
+}
+
+void HelloWorld::onNodeLoaded(cocos2d::CCNode * pNode, cocos2d::extension::CCNodeLoader * pNodeLoader)
+{
+}
+
