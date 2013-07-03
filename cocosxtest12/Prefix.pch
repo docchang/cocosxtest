@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'cocosxtest12' target in the 'cocosxtest12' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+#endif
